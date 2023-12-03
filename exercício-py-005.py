@@ -1,4 +1,4 @@
-#função para definir se o número é impoar ou par
+#função para definir se o número é impar ou par
 def func_imp_par():
     if  resultado % 2 != 0:
         return ("impar")
@@ -27,10 +27,10 @@ def soma(a, b):
 def subtração(a, b):
     return a - b
 
-def multilicação(a, b):
+def multiplicação(a, b):
     return a * b
 
-def divisao(a, b):
+def divisão(a, b):
     if b != 0:
         return a / b
     else:
@@ -41,19 +41,19 @@ a = float(input("Insira o primeiro número: "))
 b = float(input("Insira o segundo número: "))
 
 #selecione qual operação deseja fazer 
-operação = input("Insira a operação que deseja realizar(soma,subtração,divisão ou multilicação): ")
+operação = input("Insira a operação que deseja realizar(soma,subtração,divisão ou multiplicação): ")
 
 if operação == "soma":
     resultado = soma(a, b)
     print(f"Resultado: {resultado}")
 elif operação == "subtração":
-    resultado = subtracao(a, b)
+    resultado = subtração(a, b)
     print(f"Resultado: {resultado}")
 elif operação == "multiplicação":
-    resultado = multiplicacao(a, b)
+    resultado = multiplicação(a, b)
     print(f"Resultado: {resultado}")
 elif operação == "divisão":
-    resultado = divisao(a, b)
+    resultado = divisão(a, b)
     print(f"Resultado: {resultado}")
 else:
     print("Operação inválida. Por favor, escolha uma operação válida.")
